@@ -13,10 +13,13 @@ namespace BeanWebApi.Models
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int Id { get; set; }
         [Required]
+        [MaxLength(60)]
         public string Name { get; set; }
         [Required]
+        [MaxLength(60)]
         public string Aroma { get; set; }
         [Required]
+        [MaxLength(60)]
         public string Colour { get; set; }
         [Required]
         public string Image { get; set; }
